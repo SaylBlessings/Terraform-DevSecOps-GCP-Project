@@ -29,7 +29,7 @@ resource "google_identity_platform_config" "default" {
     phone_number {
         enabled = true
         test_phone_numbers = {
-            "+11231231234" = "000000"
+            "+44231231234" = "000000"
         }
     }
   }
