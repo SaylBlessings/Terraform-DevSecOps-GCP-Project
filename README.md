@@ -113,20 +113,28 @@ The `iam.tf` file defines IAM policies for the GCP project:
     }
 ```
 
-###  Tasks
-A data science company I work for has all of its workloads running on one major cloud provider platform. The company uses cloud-managed services only, including a mixture of virtual machines and containers, databases, caches, and object storage.
+###  Task
+As a senior cloud engineer at a leading IT consulting company, I have been tasked with designing and implementing a comprehensive system for continuous monitoring and automated remediation of security and compliance issues across our cloud infrastructure.
 
-•	The company employs junior and senior developers and SREs, and deployments of code, as well as infrastructure, are automated as code. Only very few users should have administrative privileges on the cloud platform. Furthermore, the company’s cloud resources under my purview are meant to be internal only; there are no services meant to be exposed to the public.
+- Our company's entire workload is hosted on a single major cloud provider platform, utilizing a range of cloud-managed services, including virtual machines, containers, databases, caches, and object storage. Our team consists of junior and senior developers, SREs, and cloud engineers, with automated deployments of code and infrastructure as code.
 
-•	As a senior cloud security engineer, I was tasked with creating a system of continuous monitoring and automated remediations that cover but are not limited to the following cases:
+### Security Requirements
 
-o	Identity and Access Management changes that result in privilege escalation (note: think about both users and service accounts, both internal and ones belonging to external services).
+To ensure the security and integrity of our cloud resources, I have identified the following key requirements:
 
-o	Creating or modifying resources that are exposed to the public internet.
+- Restrict administrative privileges to only a select few users.
+- Ensure all cloud resources are internal-only and not exposed to the public internet.
 
-o	Users having no MFA on their accounts.
+### Monitoring and Remediation Requirements
 
-o	Changes made to internal networking settings.
+The system I am designing must continuously monitor and automatically remediate the following security and compliance issues:
+
+1. *Identity and Access Management (IAM) changes*: Detect and respond to IAM changes that result in privilege escalation, including changes to user and service account permissions, both internal and external.
+2. *Publicly exposed resources*: Identify and remediate resources that are exposed to the public internet, ensuring that all cloud resources remain internal-only.
+3. *Multi-Factor Authentication (MFA)*: Monitor and enforce MFA on all user accounts, ensuring that no users have MFA disabled.
+4. *Internal networking changes*: Detect and respond to changes made to internal networking settings, ensuring that our cloud resources remain secure and compliant.
+
+By implementing this system, I aim to ensure the security, integrity, and compliance of our cloud infrastructure, protecting our internal resources and data from unauthorized access and exposure.
 
 
 ![alt text](image-1.png)
